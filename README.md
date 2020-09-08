@@ -1,2 +1,2 @@
 # GoatedGame
-This game will be Goated
+https://simmer.io/@Prier/goatedgame-demo
