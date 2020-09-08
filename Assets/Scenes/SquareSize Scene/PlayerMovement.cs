@@ -25,8 +25,8 @@ public class PlayerMovement : MonoBehaviour
         // Size Input
 
         //TODO: Change inputs to be decrease/increase instead of x and y
-        size.x = Input.GetAxisRaw("Jump")*1 + Input.GetAxisRaw("Fire1")*-1;
-        size.y = Input.GetAxisRaw("Jump")*1 + Input.GetAxisRaw("Fire1")*-1;
+        size.x = Input.GetAxisRaw("Jump")*1 + Input.GetAxisRaw("Fire3")*-1;
+        size.y = Input.GetAxisRaw("Jump")*1 + Input.GetAxisRaw("Fire3")*-1;
     }
 
     // Since framerates are variable do movement on fixed update
