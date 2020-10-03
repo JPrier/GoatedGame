@@ -1,4 +1,4 @@
 # GoatedGame
 
 ### Game Link:
-https://simmer.io/@Prier/goatedgame-demo
+https://simmer.io/@Prier/goatedgamedemo
