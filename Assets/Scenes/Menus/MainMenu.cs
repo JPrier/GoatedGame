@@ -33,10 +33,15 @@ public class MainMenu : MonoBehaviourPunCallbacks
     // Networking -- Currently Finds One other player and starts game immediately
     // TODO: Create a lobby/waiting room where players can see others and wait to start (possibly with a host or readyup system)
 
-    private void Awake() => PhotonNetwork.AutomaticallySyncScene = true;
+    private void Awake()
+    {
+        PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = "us";
+        PhotonNetwork.AutomaticallySyncScene = true;
+    }
 
     public void FindOpponent()
     {
+
         isConnecting = true;
 
         findOpponentPanel.SetActive(false);
@@ -115,7 +120,7 @@ public class MainMenu : MonoBehaviourPunCallbacks
 
     public void PlayGame()
     {
-
+        PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = "us";
         PhotonNetwork.NickName = nickname;
 
         /*SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);*/
