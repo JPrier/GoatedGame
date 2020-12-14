@@ -37,6 +37,8 @@ public class SquareSize : MonoBehaviourPun
         if (photonView.IsMine)
         {
 
+            Debug.Log("Moving Character");
+
             size.x = Mathf.Clamp(transform.localScale.x + size.x * sizeSpeed, minSize, maxSize);
             size.y = Mathf.Clamp(transform.localScale.x + size.x * sizeSpeed, minSize, maxSize);
 
